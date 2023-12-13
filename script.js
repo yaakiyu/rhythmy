@@ -6,6 +6,7 @@ function startup() {
   el.addEventListener("touchend", handleEnd);
   el.addEventListener("touchcancel", handleCancel);
   el.addEventListener("touchmove", handleMove);
+  document.body.requestFullscreen();
   log("Initialized.");
 }
 
@@ -105,6 +106,5 @@ function ongoingTouchIndexById(idToFind) {
 }
 
 function log(msg) {
-  const container = document.getElementById("log");
-  container.textContent = `${msg} \n${container.textContent}`;
+  console.log(message);
 }
