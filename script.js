@@ -1,3 +1,7 @@
+var canvas = document.getElementById('canvas');
+canvas.width = screen.availWidth;
+canvas.height = screen.availHeight;
+
 function startup() {
   const el = document.getElementById("canvas");
   el.addEventListener("touchstart", handleStart);
