@@ -106,5 +106,5 @@ function ongoingTouchIndexById(idToFind) {
 }
 
 function log(msg) {
-  console.log(message);
+  console.log(msg);
 }
