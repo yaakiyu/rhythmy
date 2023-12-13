@@ -1,9 +1,7 @@
-var canvas = document.getElementById('canvas');
-canvas.width = screen.availWidth;
-canvas.height = screen.availHeight;
-
 function startup() {
   const el = document.getElementById("canvas");
+  el.width = screen.availWidth;
+  el.height = screen.availHeight;
   el.addEventListener("touchstart", handleStart);
   el.addEventListener("touchend", handleEnd);
   el.addEventListener("touchcancel", handleCancel);
